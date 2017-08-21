@@ -4,7 +4,6 @@ require 'pry'
 
 
 if ARGV[0] != nil
-  binding.pry
   name = ARGV[0]
   body = HTTP.get(name).body
   ans = []
